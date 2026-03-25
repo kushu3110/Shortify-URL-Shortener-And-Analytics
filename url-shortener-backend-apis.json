@@ -13,8 +13,8 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "https://localhost:8080/api/auth/public/register",
-          "protocol": "https",
+          "raw": "http://localhost:8080/api/auth/public/register",
+          "protocol": "http",
           "host": [
             "localhost"
           ],
