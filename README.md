@@ -2,6 +2,9 @@
 
 **Glimpse** - Shortify allows you to shotner your URLs, maintaining a dashboard of user-specific URLs and provides analytics for day-wise click events.
 
+<img width="500" height="300" alt="url" src="https://github.com/user-attachments/assets/f63071a4-c3e4-4b02-b66a-663c23524a83" />
+
+
 This project contains 2 modules : 
 
 1. `url-shortener-sb` : Springboot Java based Backend application, User authentication via JWT, Uses MySQL database locally.
