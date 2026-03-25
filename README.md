@@ -23,6 +23,7 @@ This project contains 2 modules :
 4. For testing, Open postman.
 5. Import the `url-shortener-backend-apis.json` collection in postman.
 6. Example and formatting are already mentioned in postman collection, testing accordingly.
+7. For all the API requiring Bearer token as header - Replace the token with the `/login` api's response token, otherwise the application will fail.
 
 **(B) Run and Test frontend application**
 1. `url-shortener-sb` should be running before testing frontend application. 
