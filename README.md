@@ -19,7 +19,7 @@ This project contains 2 modules :
 4. Must have softwares - IntelliJ IDE, VS Code, Postman.
 5. Open terminal > Select desired folder to keep project > Paste : `git clone https://github.com/kushu3110/Shortify-URL-Shortener-And-Analytics.git`
 
-**(A) Run and Test backend application**
+**(A) RUN AND TEST BACKEND APPLICATION**
 1. MySQL should be running before testing backend application. 
 2. Open the cloned folder > `url-shortener-sb` in IntelliJ IDE.
 3. Run the project > It will be live on `localhost:8080`.
@@ -28,7 +28,7 @@ This project contains 2 modules :
 6. Example and formatting are already mentioned in postman collection, testing accordingly.
 7. For all the API requiring Bearer token as header - Replace the token with the `/login` api's response token, otherwise the application will fail.
 
-**(B) Run and Test frontend application**
+**(B) RUN AND TEST FRONTEND APPLICATION**
 1. `url-shortener-sb` should be running before testing frontend application. 
 2. Open the cloned folder > `url-shortener-react` in VS Code.
 3. Terminal > New terminal.
