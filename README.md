@@ -50,6 +50,8 @@ Thankyou so much for visiting this page !
 
 Kushagra Mishra (kushagram3110@gmail.com)
 
+PS - I have kept `application.yml` hard-coded intentionally because `.env` won't get pushed in commit and it'll confuse the operator for formatting of environment variables.
+
 
 
 
