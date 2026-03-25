@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: url-shortener-sb
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/urlshortenerdb
+    username: root
+    password: root
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: 068a9dfefbbc278dc1cbb99f0f4ee92af42b1b15e595335dbbf3c8ae0834eff2
+  expiration: 172800000
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+      url:
+        shortener: DEBUG
+
+frontend:
+  url: http://localhost:5173

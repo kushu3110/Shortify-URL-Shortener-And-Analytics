@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "af0e90cd-f243-436f-b124-8dc71f6576bc",
+    "name": "URL Shortener Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51933752",
+    "_collection_link": "https://go.postman.co/collection/51933752-af0e90cd-f243-436f-b124-8dc71f6576bc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:8080/api/auth/public/register",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "auth",
+            "public",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\" : \"kushu3110\",\n    \"password\" : \"pass@123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/auth/public/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "auth",
+            "public",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Shorten",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJrdXNodTMxMTAiLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTc3NDAwNjM4OCwiZXhwIjoxNzc0MTc5MTg4fQ.MH4-wEKbGU1wQlHj7CqS_m_AxzwSLRuTw5cf4Rer8XRwfOz-8tQz6OthgYaK7O8q",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"originalUrl\" : \"https://example.com\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/urls/shortner",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "urls",
+            "shortner"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get-My-Urls",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJrdXNodTMxMTAiLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTc3NDAwODI4OSwiZXhwIjoxNzc0MTgxMDg5fQ.JXUUvAmvwXxjYvkgkaDulmw-93EKpVqmlENpy1_3c7BxQtMtK911VIDnSVBe0BQM",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/urls/myurls",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "urls",
+            "myurls"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "URL Specific Analytics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/urls/analytics/abc123?startDate=2024-12-01T00:00:00&endDate=2024-12-07T23:59:59",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "urls",
+            "analytics",
+            "abc123"
+          ],
+          "query": [
+            {
+              "key": "startDate",
+              "value": "2024-12-01T00:00:00",
+              "type": "text"
+            },
+            {
+              "key": "endDate",
+              "value": "2024-12-07T23:59:59",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Total Click Analytics",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJrdXNodTMxMTAiLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTc3NDAwODI4OSwiZXhwIjoxNzc0MTgxMDg5fQ.JXUUvAmvwXxjYvkgkaDulmw-93EKpVqmlENpy1_3c7BxQtMtK911VIDnSVBe0BQM",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/urls/totalClicks?startDate=2024-12-01&endDate=2024-12-07",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "urls",
+            "totalClicks"
+          ],
+          "query": [
+            {
+              "key": "startDate",
+              "value": "2024-12-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2024-12-07"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
