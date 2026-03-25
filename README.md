@@ -9,8 +9,26 @@ This project contains 2 modules :
 
 **Steps to run the project locally :**
 
-**PRE-REQUISITES:** 
+**PRE-REQUISITES :** 
 1. MySQL server and workbench.
 2. NodeJS environment.
 3. Create a MySql server - `localhost:3306`, add a database named `urlshortenerdb` in the server with credentials (username - root, password - root)
 4. Must have softwares - IntelliJ IDE, VS Code, Postman.
+5. Open terminal > Select desired folder to keep project > Paste : `git clone https://github.com/kushu3110/Shortify-URL-Shortener-And-Analytics.git`
+
+**(A) Run and Test backend application**
+1. MySQL should be running before testing backend application. 
+2. Open the cloned folder > `url-shortener-sb` in IntelliJ IDE.
+3. Run the project > It will be live on `localhost:8080`.
+4. For testing, Open postman.
+5. Import the `url-shortener-backend-apis.json` collection in postman.
+6. Example and formatting are already mentioned in postman collection, testing accordingly.
+
+**(B) Run and Test frontend application**
+1. `url-shortener-sb` should be running before testing frontend application. 
+2. Open the cloned folder > `url-shortener-react` in VS Code.
+3. Terminal > New terminal.
+4. Install npm - Paste this : `npm install`.
+5. To run the application - Paste this : `npm run dev`.
+6. Application will be live on `localhost:5173`
+7. Essentially, `LoginPage`, `RegisterPage` and `Dashboard` are the areas of focus, Try to generate short URL's > when generated pop-up shows up > reload the page > View analytics.
