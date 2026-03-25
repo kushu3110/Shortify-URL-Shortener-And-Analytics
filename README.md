@@ -34,9 +34,11 @@ This project contains 2 modules :
 7. Essentially, `LoginPage`, `RegisterPage` and `Dashboard` are the areas of focus, Try to generate short URL's > when generated pop-up shows up > reload the page > View analytics.
 
 **User-specific analytics :**
+
   <img width="500" height="300" alt="Screenshot 2026-03-25 at 4 16 50 PM" src="https://github.com/user-attachments/assets/46eebb4e-8c74-4524-b920-f1a7bffbbc6a" />
 
 **URL-specific analytics :**
+
   <img width="500" height="300" alt="Screenshot 2026-03-25 at 4 19 19 PM" src="https://github.com/user-attachments/assets/63f3e85d-8afa-4943-9e9c-81d905995159" />
 
 Thankyou so much for visiting this page !
