@@ -41,9 +41,10 @@ This project contains 2 modules :
 
   <img width="500" height="300" alt="Screenshot 2026-03-25 at 4 19 19 PM" src="https://github.com/user-attachments/assets/63f3e85d-8afa-4943-9e9c-81d905995159" />
 
+
 Thankyou so much for visiting this page !
-Kushagra Mishra
-kushagram3110@gmail.com
+
+Kushagra Mishra (kushagram3110@gmail.com)
 
 
 
